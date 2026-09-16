@@ -15,7 +15,7 @@ def total_revenue():
     df = pd.read_csv('sales_data.csv')
     # Calculate total revenue
     total_revenue = (df['sales']).sum()
-    return jsonify({'total_revenue': int(total_revenue)})
+    return jsonify({'total_revenue calculated': int(total_revenue)})
 
 if __name__ == '__main__':
     app.run(debug=True)
